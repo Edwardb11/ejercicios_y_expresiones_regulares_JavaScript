@@ -22,3 +22,19 @@ for (var i = 0; i < donuts.length; i++) {
     donuts[i] = donuts[i].toUpperCase();
     console.log(donuts[i]);
 }
+
+//Parámetros
+//La función que pasa al método forEach () puede tomar hasta tres parámetros. 
+//Estos se denominan elemento, índice y matriz, pero puedes llamarlos como quieras.
+
+//El método forEach () llamará a esta función una vez para cada elemento de la matriz 
+//(de ahí el nombre forEach). Cada vez, llamará a la función con diferentes argumentos. 
+//El parámetro del elemento obtendrá el valor del elemento de la matriz. El parámetro
+// de índice obtendrá el índice del elemento (comenzando con cero). El parámetro de
+// matriz obtendrá una referencia a toda la matriz, lo cual es útil si desea modificar 
+//los elementos.
+
+words = ["cat", "in", "hat"];
+words.forEach(function (word, num, all) {
+    console.log("Word " + num + " in " + all.toString() + " is " + word);
+});
