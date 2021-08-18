@@ -11,6 +11,7 @@ donuts.forEach(function (donut) {
     donut = donut.toUpperCase();
     console.log(donut);
 });
+console.log("\n-----------");
 
 //Puede ver que el método forEach () itera sobre la matriz sin la necesidad 
 //de un índice definido explícitamente. En el ejemplo anterior, donut corresponde 
@@ -22,6 +23,7 @@ for (var i = 0; i < donuts.length; i++) {
     donuts[i] = donuts[i].toUpperCase();
     console.log(donuts[i]);
 }
+console.log("\n-----------");
 
 //Parámetros
 //La función que pasa al método forEach () puede tomar hasta tres parámetros. 
@@ -36,5 +38,5 @@ for (var i = 0; i < donuts.length; i++) {
 
 words = ["cat", "in", "hat"];
 words.forEach(function (word, num, all) {
-    console.log("Word " + num + " in " + all.toString() + " is " + word);
+    console.log("Index " + num + " String " + all.toString() + " Posicion " + word);
 });
