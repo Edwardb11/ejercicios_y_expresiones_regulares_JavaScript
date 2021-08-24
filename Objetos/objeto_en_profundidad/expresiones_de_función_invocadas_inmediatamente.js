@@ -38,20 +38,22 @@ const myFunction = (
 
 💡 Sintaxis alternativa para IIFE's 💡
 Recuerde el ejemplo del principio de esta sección:
-
+*/
 (function sayHi(){
    alert('Hi there!');
  }
 )();
 
 // alerts 'Hi there!'
-Esto funciona muy bien, ¡pero también hay otra forma en que podemos escribir esto para lograr los mismos resultados! El primer conjunto de paréntesis puede envolver toda la expresión. Es decir, podemos mover el primer paréntesis de cierre hasta el final:
+//Esto funciona muy bien, ¡pero también hay otra forma en que podemos escribir esto para lograr los mismos resultados! El primer conjunto de paréntesis puede envolver toda la expresión. Es decir, podemos mover el primer paréntesis de cierre hasta el final:
 
 (function sayHi(){
    alert('Hi there!');
 }());
 
-// alerts 'Hi there!'
+alerts 'Hi there!'
+/*
+// 
 Nuevamente, el uso de cualquiera de los enfoques seguirá produciendo el mismo resultado: alertas 'Hi there!'en el navegador.
 
 Ahora bien, ¿cuándo elegiría una forma sobre la otra? Mucho de esto es una elección estilística; no existe una forma "correcta" de ejecutar automáticamente una función anónima. Ambos son enfoques válidos para lograr el mismo resultado, y el motor de JavaScript aún los analizará como una expresión de función (es decir, en lugar de como una declaración de función ).
