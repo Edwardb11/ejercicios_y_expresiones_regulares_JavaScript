@@ -125,15 +125,29 @@ const dog = {
 const myGrow = dog.growOneYear.bind(dog);
 
 dog.age;
- // 7
+// 7
 
+// Considerando
+const driver = {
+    name: 'Danica',
+    displayName: function () {
+        console.log(`Name: ${this.name}`);
+    }
+};
+
+const car = {
+    name: 'Fusion'
+};
 //  Escriba una expresión usando bind()que nos permita "tomar prestado" el
 // displayName()método driverpara que el carobjeto lo use.Nota: La expresión 
 //  en sí es suficiente(no es necesario guardarla en una variable).
 
 
+const newFunction = driver.displayName.bind(car);
+//delete driver.displayName;
 
-
+console.log(driver.displayName);
+newFunction();
 
 // Resumen
 // JavaScript proporciona tres métodos que nos permiten establecer el valor de thispara una función determinada:
